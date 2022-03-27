@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <title>HomePage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="page">
+
+<!-- Header -->
+<header class="header">
+    <div class="container-header">
+        <div class="header__inner">
+            <div class="header-top">
+                <button class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <a class="logo" href="index.html">
+                    <img class="logo__desctop" src="assets/img/other/logo.svg" alt="">
+                    <img class="logo__mobile" src="assets/img/other/mobile-logo.svg" alt="">
+                </a>
+                
+                <div class="search">
+                    <input class="search__input" type="search" placeholder="Поиск товаров..">
+                </div>
+                <ul class="header-top__items">
+                    <li class="header-top__item header-top__phone">
+                        <a class="header__phone" href="tel:+74955063650">
+                            <img src="../../assets/img/header/phone.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="header-top__item header-top__car">
+                        <img class="header__item-car" src="assets/img/header/car.svg" alt="" >
+                    </li>
+                    <li class="header-top__item">
+                        <img class="header__item-person" src="assets/img/header/person.svg" alt="" >
+                    </li>
+                    <li class="header-top__item">
+                        <img class="header__item-basket" src="assets/img/header/basket.svg" alt="" >
+                        <span class="header-top__circle">3</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-bottom">
+                <ul class="header-bottom__items">
+                    <li class="header-bottom__item">
+                        <a class="header-bottom__link" href="/">
+                            <img class="header-bottom__pin" src="assets/img/header/pin.svg" alt=""> 
+                            Екатеринбург
+                        </a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a class="header-bottom__link" href="tel:+74955063650">
+                            <img class="header-bottom__phone" src="assets/img/header/phone.svg" alt=""> 
+                            +7 (495) 506-36-50
+                        </a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a class="header-bottom__link" href="mailto:office@uconerfo.ru">
+                            <img class="header-bottom__mail" src="assets/img/header/mail.svg" alt=""> 
+                            office@uconerfo.ru
+                        </a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a class="header-bottom__link" href="/"> 
+                            <img class="header-bottom__pencil" src="assets/img/header/pencil.svg" alt="">
+                            Заявка на расчет
+                        </a>
+                    </li>
+                    <li class="header-bottom__item">
+                        <a class="header-bottom__link" href="/"> 
+                            <img class="header-bottom__headphones" src="assets/img/header/headphones.svg" alt="">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile">
+                <div class="mobile__header">
+                    <img class="mobile__logo" src="assets/img/other/mobile-logo.svg" alt="">
+                    <img class="mobile__close" src="assets/img/header/close.svg" alt="">
+                </div>
+                <div class="mobile__body">
+                    <div class="mobile__widget">
+                        <div class="mobile__widget-header widget__open">
+                            <div class="mobile__title ">
+                                <img class="mobile__radiator" src="assets/img/header/radiator.svg" alt="">
+                                Отопительное оборудование</div>
+                            <button class="mobile__arrow arrow">
+                                <img src="assets/img/category/arrow.svg" alt="">
+                            </button>
+                        </div>
+                        
+                        <ul class="mobile__items widget__hide">
+                            <li class="mobile__item">
+                                <a class="mobile__link" href="#">
+                                    Радиаторы отопления
+                                </a>
+                            </li>
+                            <li class="mobile__item">
+                                <a class="mobile__link" href="#">
+                                    Конвекторы отопления
+                                </a>
+                            </li>
+                            <li class="mobile__item">
+                                <a class="mobile__link" href="#">
+                                    Полотенцесушители
+                                </a>
+                            </li>
+                            <li class="mobile__item">
+                                <a class="mobile__link" href="#">
+                                    Арматура для радиаторов и конвектеров
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mobile__widget">
+                        <div class="mobile__widget-header">
+                            <div class="mobile__title">
+                                <img class="mobile__tap" src="assets/img/header/tap.svg" alt="">
+                                Комплектация объектов сантехникой</div>
+                        </div>
+                    </div>
+
+                    <div class="mobile__widget">
+                        <div class="mobile__widget-header">
+                            <div class="mobile__title mobile__spray-lh">
+                                <img class="mobile__spray" src="assets/img/header/spray.svg" alt="">
+                                Дозаторы антисептика и стойки для диспенсера</div>
+                        </div>
+                    </div>
+
+                    <div class="mobile__widget">
+                        <div class="mobile__widget-header widget__open">
+                            <div class="mobile__title">
+                                <img class="mobile__can" src="assets/img/header/can.svg" alt="">
+                                Водосберегающая сантехника</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile__footer">
+                    <ul class="mobile__list">
+                        <div class="mobile__li">
+                            <a class="mobile__link" href="#">Наше производство</a>
+                        </div>
+                        <div class="mobile__li">
+                            <a class="mobile__link" href="#">Готовые решения</a>
+                        </div>
+                        <div class="mobile__li">
+                            <a class="mobile__link" href="#">О компании</a>
+                        </div>
+                        <div class="mobile__li">
+                            <a class="mobile__link" href="#">Доставка и оплата</a>
+                        </div>
+                        <div class="mobile__li">
+                            <a class="mobile__link" href="#">Сертификаты</a>
+                        </div>
+                        <div class="mobile__li">
+                            <a class="mobile__link" href="#">Новости</a>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<!-- Content -->
+
+<main class="main">
+    <div class="intro">
+        <div class="container">
+            <div class="intro__content">
+                <div class="intro__info">
+                    <div class="intro__title">Дозаторы и антисептики</div>
+                    <div class="intro__text">Устанавливаются в общественных местах для предотвращения распространения вирусов микробов</div>
+                </div>
+                <button class="btn">
+                    <img class="btn__img" src="assets/img/btn/arrow.svg" alt="">
+                    Подробнее
+                </button> 
+                <img class="intro__decor" src="assets/img/intro/decor.png" alt="">
+                <img class="intro__decor2" src="assets/img/intro/decor2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__ul">
+                <li class="breadcrumbs__li">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__li">Отопительное оборудование</li>
+            </ul>
+        </div>
+    </div>
+    <div class="category">
+        <div class="container">
+            <div class="category__inner">
+                <div class="category__title">Отопительное оборудование</div>
+                <div class="category__content">
+                    <span class="number media">
+                        <div class="text">2394</div>
+                        <div class="measure">товаров</div>
+                    </span>
+                    <div class="filter">
+                        <div class="filter__header">
+                            <div class="filter__title">
+                                <img src="assets/img/filter/decor.svg" alt="">
+                                Фильтры</div>
+                            <div class="filter__close">
+                               Сбросить 
+                                <img src="assets/img/category/close.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="filter__content">
+                            <div class="filter__body">
+                                <div class="widget">
+                                    <div class="widget__header widget__open">
+                                        <div class="widget__title">Отопительное оборудование</div>
+                                        <button class="widget__arrow arrow">
+                                            <img src="assets/img/category/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <ul class="widget__body widget__hide">
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_1">
+                                            <label class="checkbox__label" for="checkbox_1">Радиаторы отопления</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_2">
+                                            <label class="checkbox__label" for="checkbox_2">Конвекторы отопления</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_3">
+                                            <label class="checkbox__label" for="checkbox_3">Полотенцесушители</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_4">
+                                            <label class="checkbox__label" for="checkbox_4">Арматура для радиаторов </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="widget">
+                                    <div class="widget__header widget__open">
+                                        <div class="widget__title">Бренд</div>
+                                        <button class="widget__arrow arrow">
+                                            <img src="assets/img/category/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <ul class="widget__body widget__hide">
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_5">
+                                            <label class="checkbox__label" for="checkbox_5">Purmo</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_6">
+                                            <label class="checkbox__label" for="checkbox_6">Irsap</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_7">
+                                            <label class="checkbox__label" for="checkbox_7">Terma</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_8">
+                                            <label class="checkbox__label" for="checkbox_8">Loten</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_9">
+                                            <label class="checkbox__label" for="checkbox_9">Guardo</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="widget">
+                                    <div class="widget__header widget__open">
+                                        <div class="widget__title">Цена</div>
+                                    </div>
+
+                                    <div class="widget__body">
+                                        <div class="widget__price">
+                                            <div class="widget__price-slider" id="range-slider"></div>
+                                            <div class="widget__price-labels">
+                                                <label class="widget__price-label" for="">
+                                                    <input class="widget__price-input" type="number" min="500" max="999999" placeholder="500" id="ui_1">
+                                                </label>
+                                                <span class="widget__price-hyphen"></span>
+                                                <label class="widget__price-label" for="">
+                                                    <input class="widget__price-input" type="number" min="500" max="999999" placeholder="999999" id="ui_2">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+
+
+
+
+
+
+
+
+
+                                <div class="widget">
+                                    <div class="widget__header widget__open">
+                                        <div class="widget__title">Количество секций</div>
+                                        <button class="widget__arrow arrow">
+                                            <img src="assets/img/category/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <ul class="widget__body widget__hide">
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_10">
+                                            <label class="checkbox__label" for="checkbox_10">4</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_11">
+                                            <label class="checkbox__label" for="checkbox_11">6</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_12">
+                                            <label class="checkbox__label" for="checkbox_12">8</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_13">
+                                            <label class="checkbox__label" for="checkbox_13">12</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="widget">
+                                    <div class="widget__header widget__open">
+                                        <div class="widget__title">Межосетевое расстояние</div>
+                                        <button class="widget__arrow arrow">
+                                            <img src="assets/img/category/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <ul class="widget__body widget__hide">
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_14">
+                                            <label class="checkbox__label" for="checkbox_14">20 см</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_15">
+                                            <label class="checkbox__label" for="checkbox_15">35 см</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_16">
+                                            <label class="checkbox__label" for="checkbox_16">50 см</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="widget">
+                                    <div class="widget__header widget__open">
+                                        <div class="widget__title">Площадь отопления</div>
+                                        <button class="widget__arrow arrow">
+                                            <img src="assets/img/category/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <ul class="widget__body widget__hide">
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_17">
+                                            <label class="checkbox__label" for="checkbox_17">Более 19 м² </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_18">
+                                            <label class="checkbox__label" for="checkbox_18">Менее 8 м²</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_19">
+                                            <label class="checkbox__label" for="checkbox_19">от 10 до 14 м²</label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_20">
+                                            <label class="checkbox__label" for="checkbox_20">от 15 до 26 м² </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="widget">
+                                    <div class="widget__header widget__open">
+                                        <div class="widget__title">Цвет</div>
+                                        <button class="widget__arrow arrow">
+                                            <img src="assets/img/category/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+
+                                    <ul class="widget__body widget__hide">
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_21">
+                                            <label class="checkbox__label-color red" for="checkbox_21">Красный</label>
+                                            <label class="checkbox__close" for="checkbox_21">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_22">
+                                            <label class="checkbox__label-color yellow" for="checkbox_22">Желтый</label>
+                                            <label class="checkbox__close" for="checkbox_22">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_23">
+                                            <label class="checkbox__label-color green" for="checkbox_23">Зеленый</label>
+                                            <label class="checkbox__close" for="checkbox_23">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_24">
+                                            <label class="checkbox__label-color blue" for="checkbox_24">Синий</label>
+                                            <label class="checkbox__close" for="checkbox_24">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_25">
+                                            <label class="checkbox__label-color purple" for="checkbox_25">Фиолетовый</label>
+                                            <label class="checkbox__close" for="checkbox_25">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_30">
+                                            <label class="checkbox__label-color pink" for="checkbox_30">Розовый</label>
+                                            <label class="checkbox__close" for="checkbox_30">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_26">
+                                            <label class="checkbox__label-color beige" for="checkbox_26">Бежевый</label>
+                                            <label class="checkbox__close" for="checkbox_26">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_27">
+                                            <label class="checkbox__label-color while" for="checkbox_27">Белый</label>
+                                            <label class="checkbox__close" for="checkbox_27">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_28">
+                                            <label class="checkbox__label-color black" for="checkbox_28">Черный</label>
+                                            <label class="checkbox__close" for="checkbox_28">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>
+                                        <li class="widget__item checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_29">
+                                            <label class="checkbox__label-color gray" for="checkbox_29">Серый</label>
+                                            <label class="checkbox__close" for="checkbox_29">
+                                                <img src="assets/img/other/close.svg" alt="">
+                                            </label>
+                                        </li>   
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="filter__footer">
+                            <button class="filter__btn">
+                                <img src="assets/img/btn/arrow2.svg" alt="">
+                                применить
+                            </button>
+                            <div class="filter__close">
+                                Сбросить 
+                                    <img src="assets/img/category/close.svg" alt="">
+                                </div>
+                        </div>
+                    
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__header">
+                        <span class="number">
+                            <div class="text">2394</div>
+                            <div class="measure">товаров</div>
+                        </span>
+                        <div class="card__sort">
+                            <div class="card__cost">Цена:</div>
+                            <div class="card__assortment">По возрастанию
+                            </div>
+                            <button class="arrow">
+                                <img src="assets/img/category/arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__items">
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/1.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/2.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                    <div class="card__old-price">5 890</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="card__events">
+                                <div class="card__event">
+                                    <img src="assets/img/category/percent.svg" alt="">
+                                    Акция
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/3.jpg" alt="">
+                            </div>
+                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/1.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/2.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/3.jpg" alt="">
+                            </div>
+                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/1.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/2.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                    <div class="card__old-price">5 890</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="card__events">
+                                <div class="card__event">
+                                    <img src="assets/img/category/percent.svg" alt="">
+                                    Акция
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/3.jpg" alt="">
+                            </div>
+                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/1.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/2.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/3.jpg" alt="">
+                            </div>
+                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/1.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/2.jpg" alt="">
+                            </div>
+                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__img">
+                                <img src="assets/img/category/3.jpg" alt="">
+                            </div>
+                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                            <div class="card__footer">
+                                <div class="card__price">
+                                    <div class="card__new-price">4 250</div>
+                                </div>
+                                <button class="card__btn">
+                                    <img src="assets/img/category/basket.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="card__footer">
+                        <button class="card__more">Показать еще</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seo">
+        <div class="container">
+            <div class="seo__inner">
+                <div>Длинный или короткий заголовок SEO текста</div>
+                <p>Интернет-магазин автоматической водосберегающей сантехники и дизайн радиаторов отопления <br>
+                Сантехническое и отопительное оборудование - основные продукты интернет-магазина "Экон Урфо".<br> 
+                На сайте urfoecon.ru, вы можете выбрать и купить автоматическую водосберегающую сантехнику и дизайн радиаторы отопления. На сайте urfoecon.ru, вы можете выбрать: смесители, душевые, смывные устройства для унитазов и писсуаров, а так же дополнительные товары: сушилки для рук, дозаторы мыла, фены для волос, держатели туалетной бумаги, ведра и другое.</p>
+                
+                <p>Преимущества автоматической водосберегающей сантехники — экономия денег и воды! Результат будет заметен с первого месяца установки. Обратитесь к нашим специалистам и узнайте вашу выгоду при использовании автоматической водосберегающей сантехники. Звоните или оставляйте заявку на расчет.</p>
+                
+                
+                <span>Подзаголовок внутри текста</span>
+                
+                <p>На сайте urfoecon.ru, вы можете выбрать красивые современные модели радиаторов отопления Европейских и Российских производителей. Радиаторы представленные в каталоге,изготовлены из прочных материалов: сталь, алюминий и биметалл. Мы уверены в качестве нашей продукции и предоставляем гарантию до 25 лет на радиаторы отопления. В нашем ассортименте: водяные и электрические радиаторы, высокие, средние и низкие, узкие и широкие, трубчатые и панельные модели, стандартные белые, черные, бежевые и любые цвета по шкале RAL.</p>
+                
+                <p>Обратитесь к нашим специалистам и подберите радиаторы, которые гармонично впишутся в ваш интерьер и будут эффективно обогревать ваш дом. Звоните или оставляйте заявку на расчет.</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <a class="footer__logo" href="">
+                        <img class="footer__logo" src="assets/img/other/logo.svg" alt="">
+                    </a>
+                    <div class="footer__connection connection">
+                        <a class="connection__number" href="tel:+74955063650"> 
+                            <img src="assets/img/footer/phone.svg" alt="">
+                            +7 (495) 506-36-50
+                        </a>
+                        <div class="connection__dates">
+                            <span class="connection__date">Пн-Пт: &nbsp;с 08:00 до 19:00</span> 
+                            <span class="connection__date">Сб-Вс: &nbsp;c 08:00 до 16:00</span>
+                        </div>
+                        <a class="connection__mail" href="mailto:office@uconerfo.ru"> 
+                            <img src="assets/img/footer/mail.svg" alt="">
+                            office@uconerfo.ru
+                        </a>
+                        <div class="connection__social social">
+                            <div class="social__title">Мы в сети</div>
+                            <div class="social__items">
+                                <a class="social__item" href="">
+                                    <img class="social__vk" src="assets/img/footer/vk.svg" alt="">
+                                    ВКонтакте
+                                </a>
+                                <a class="social__item social__item--inst" href="">
+                                    <img class="social__inst" src="assets/img/footer/inst.svg" alt="">
+                                    instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__title">Категории продукции</div>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Трубчатые радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Панельные радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Полотенцесушители</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Вертикальные радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Дизайн радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Внутрипольные конвекторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Конвекторы водяные</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Водосберегающая сантехника</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Теплый пол</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Чугунные дизайн радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Арматура для радиаторов</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__title">Категории продукции</div>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Трубчатые радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Панельные радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Полотенцесушители</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Вертикальные радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Дизайн радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Внутрипольные конвекторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Конвекторы водяные</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Водосберегающая сантехника</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Теплый пол</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Чугунные дизайн радиаторы</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Арматура для радиаторов</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__title">Информация</div>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">О компании</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Готовые решения</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Наша продукция</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Цвета</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Сертификаты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Доставка и оплата</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright copyright">
+            <div class="copyright__item">Copyright © 2014 - 2020</div>
+            <div class="copyright__item">
+                <a class="copyright__link" href="#">Политика конфиденциальности</a>
+            </div>
+            <div class="copyright__item">
+                <a class="copyright__link" href="#">Обработка персональной информации</a>
+            </div>
+            <a class="copyright__link" href="#">
+                <img class="copyright__img" src="assets/img/footer/copy.svg" alt="">
+            </a> 
+        </div>
+    </div>
+</footer>
+
+<!-- Sprite -->
+<svg style="display: none;">
+    <symbol id="phone" viewbox="0 0 24 24">
+        <g>
+            <path />
+        </g>
+    </symbol>
+
+</svg>
+
+</div>
+
+<!-- Modal -->
+
+<!--Modals-->
+
+<!-- <div class="modal" id="addBasket">
+    <div class="modal__inner">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h4 class="modal__title">Товар добавлен в корзину</h4>
+                <button class="modal__close" type="button" data-modal-close>
+                    <span class="modal__line">1</span>
+                    <span class="modal__line">2</span>
+                </button>
+            </div>
+            <div class="modal__body">
+                <div class="modal__img">
+                    <img src="assets/img/modal/1.jpg" alt="">
+                </div>
+                <div class="modal__info">
+                    <h5 class="modal__info-title">Квадроцикл HB-EATV 1000Q-5ST(MP3) V2</h5>
+                    <div class="modal__text">4 199,86 грн</div>
+                </div>
+            </div>
+            <div class="modal__footer">
+                <button class="btn modal__btn modal__btn-continue" data-modal-close>Продолжить покупки</button>
+                <a class="btn modal__btn modal__btn-basket" href="">Перейти в корзину</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<script src="assets/js/app.min.js"></script>
+
+</body>
+</html>

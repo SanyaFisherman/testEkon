@@ -1,0 +1,118 @@
+{
+    "products": [
+        {
+            "id": 5,
+            "title": "Grifo",
+            "labels": "",
+            "images": [
+                {
+                    "value": "1.jpg"
+                },
+                {
+                    "value": "2.jpg"
+                },
+                {
+                    "value": "3.jpg"
+                }
+            ],
+            "price": "1.500.000",
+            "priceOld": ""
+        },
+        {
+            "id": 6,
+            "title": "Muggo",
+            "labels": [
+                {
+                    "type": "top",
+                    "value": "-50%"
+                },
+                {
+                    "type": "top",
+                    "value": "New"
+                }
+            ],
+            "images": [
+                {
+                    "value": "1.jpg"
+                },
+                {
+                    "value": "2.jpg"
+                },
+                {
+                    "value": "3.jpg"
+                }
+            ],
+            "price": "1.500.000",
+            "priceOld": "2.500.000"
+        },
+        {
+            "id": 7,
+            "title": "Pingky",
+            "labels": [
+                {
+                    "type": "sale",
+                    "value": "-50%"
+                }
+            ],
+            "images": [
+                {
+                    "value": "1.jpg"
+                },
+                {
+                    "value": "2.jpg"
+                },
+                {
+                    "value": "3.jpg"
+                }
+            ],
+            "price": "7.000.000",
+            "priceOld": "14.500.000"
+        },
+        {
+            "id": 8,
+            "title": "Potty",
+            "labels": [
+                {
+                    "type": "new",
+                    "value": "New"
+                }
+            ],
+            "images": [
+                {
+                    "value": "1.jpg"
+                },
+                {
+                    "value": "2.jpg"
+                },
+                {
+                    "value": "3.jpg"
+                }
+            ],
+            "price": "500.000",
+            "priceOld": ""
+        },
+        {
+            "id": 8,
+            "title": "Pingky",
+            "labels": [
+                {
+                    "type": "sale",
+                    "value": "-50%"
+                }
+            ],
+           "images": [
+                {
+                    "value": "1.jpg"
+                },
+                {
+                    "value": "2.jpg"
+                },
+                {
+                    "value": "3.jpg"
+                }
+            ],
+            "price": "7.000.000",
+            "priceOld": "14.500.000"
+        }
+    ]
+}
