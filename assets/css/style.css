@@ -1631,8 +1631,22 @@ input[type=number] {
     cursor: pointer;
 }
 
+.filter__close-mobile {
+    display: none;
+}
+
 @media (max-width: 415px) {
-    .filter__close {
+    .filter__close-mobile {
+        display: block;
+    }
+}
+
+.filter__close-desc {
+    display: block;
+}
+
+@media (max-width: 415px) {
+    .filter__close-desc {
         display: none;
     }
 }
