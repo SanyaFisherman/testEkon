@@ -22,8 +22,8 @@
 
 <!-- Header -->
 <header class="header">
-    <div class="container-header">
-        <div class="header__inner">
+    <div class="header__inner">
+        <div class="container__header-top">
             <div class="header-top">
                 <button class="burger">
                     <span class="burger__line"></span>
@@ -47,15 +47,19 @@
                     <li class="header-top__item header-top__car">
                         <img class="header__item-car" src="assets/img/header/car.svg" alt="" >
                     </li>
-                    <li class="header-top__item">
+                    <li class="header-top__item header-top__person">
                         <img class="header__item-person" src="assets/img/header/person.svg" alt="" >
+                        <img class="header__mobile-person" src="assets/img/header/mobile-person.svg" alt="" >
                     </li>
                     <li class="header-top__item">
                         <img class="header__item-basket" src="assets/img/header/basket.svg" alt="" >
+                        <img class="header__mobile-person" src="assets/img/header/mobile-basket.svg" alt="" >
                         <span class="header-top__circle">3</span>
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="container__header-bottom">
             <div class="header-bottom">
                 <ul class="header-bottom__items">
                     <li class="header-bottom__item">
@@ -90,94 +94,95 @@
                     </li>
                 </ul>
             </div>
-            <div class="mobile">
-                <div class="mobile__header">
-                    <img class="mobile__logo" src="assets/img/other/mobile-logo.svg" alt="">
-                    <img class="mobile__close" src="assets/img/header/close.svg" alt="">
-                </div>
-                <div class="mobile__body">
-                    <div class="mobile__widget">
-                        <div class="mobile__widget-header widget__open">
-                            <div class="mobile__title ">
-                                <img class="mobile__radiator" src="assets/img/header/radiator.svg" alt="">
-                                Отопительное оборудование</div>
-                            <button class="mobile__arrow arrow">
-                                <img src="assets/img/category/arrow.svg" alt="">
-                            </button>
+        </div>
+        <div class="mobile">
+            <div class="mobile__header">
+                <img class="mobile__logo" src="assets/img/other/mobile-logo.svg" alt="">
+                <img class="mobile__close" src="assets/img/header/close.svg" alt="">
+            </div>
+            <div class="mobile__body">
+                <div class="mobile__widget">
+                    <div class="mobile__widget-header widget__open widget__header--active">
+                        <div class="mobile__title ">
+                            <img class="mobile__radiator" src="assets/img/header/radiator.svg" alt="">
+                            Отопительное оборудование
                         </div>
-                        
-                        <ul class="mobile__items widget__hide">
-                            <li class="mobile__item">
-                                <a class="mobile__link" href="#">
-                                    Радиаторы отопления
-                                </a>
-                            </li>
-                            <li class="mobile__item">
-                                <a class="mobile__link" href="#">
-                                    Конвекторы отопления
-                                </a>
-                            </li>
-                            <li class="mobile__item">
-                                <a class="mobile__link" href="#">
-                                    Полотенцесушители
-                                </a>
-                            </li>
-                            <li class="mobile__item">
-                                <a class="mobile__link" href="#">
-                                    Арматура для радиаторов и конвектеров
-                                </a>
-                            </li>
-                        </ul>
+                        <button class="mobile__arrow arrow">
+                            <img src="assets/img/category/arrow.svg" alt="">
+                        </button>
                     </div>
-
-                    <div class="mobile__widget">
-                        <div class="mobile__widget-header">
-                            <div class="mobile__title">
-                                <img class="mobile__tap" src="assets/img/header/tap.svg" alt="">
-                                Комплектация объектов сантехникой</div>
-                        </div>
-                    </div>
-
-                    <div class="mobile__widget">
-                        <div class="mobile__widget-header">
-                            <div class="mobile__title mobile__spray-lh">
-                                <img class="mobile__spray" src="assets/img/header/spray.svg" alt="">
-                                Дозаторы антисептика и стойки для диспенсера</div>
-                        </div>
-                    </div>
-
-                    <div class="mobile__widget">
-                        <div class="mobile__widget-header widget__open">
-                            <div class="mobile__title">
-                                <img class="mobile__can" src="assets/img/header/can.svg" alt="">
-                                Водосберегающая сантехника</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mobile__footer">
-                    <ul class="mobile__list">
-                        <div class="mobile__li">
-                            <a class="mobile__link" href="#">Наше производство</a>
-                        </div>
-                        <div class="mobile__li">
-                            <a class="mobile__link" href="#">Готовые решения</a>
-                        </div>
-                        <div class="mobile__li">
-                            <a class="mobile__link" href="#">О компании</a>
-                        </div>
-                        <div class="mobile__li">
-                            <a class="mobile__link" href="#">Доставка и оплата</a>
-                        </div>
-                        <div class="mobile__li">
-                            <a class="mobile__link" href="#">Сертификаты</a>
-                        </div>
-                        <div class="mobile__li">
-                            <a class="mobile__link" href="#">Новости</a>
-                        </div>
+                    
+                    <ul class="mobile__items widget__hide">
+                        <li class="mobile__item">
+                            <a class="mobile__link" href="#">
+                                Радиаторы отопления
+                            </a>
+                        </li>
+                        <li class="mobile__item">
+                            <a class="mobile__link" href="#">
+                                Конвекторы отопления
+                            </a>
+                        </li>
+                        <li class="mobile__item">
+                            <a class="mobile__link" href="#">
+                                Полотенцесушители
+                            </a>
+                        </li>
+                        <li class="mobile__item">
+                            <a class="mobile__link" href="#">
+                                Арматура для радиаторов и конвектеров
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
+                <div class="mobile__widget">
+                    <div class="mobile__widget-header">
+                        <div class="mobile__title">
+                            <img class="mobile__tap" src="assets/img/header/tap.svg" alt="">
+                            Комплектация объектов сантехникой</div>
+                    </div>
+                </div>
+
+                <div class="mobile__widget">
+                    <div class="mobile__widget-header">
+                        <div class="mobile__title mobile__spray-lh">
+                            <img class="mobile__spray" src="assets/img/header/spray.svg" alt="">
+                            Дозаторы антисептика и стойки для диспенсера</div>
+                    </div>
+                </div>
+
+                <div class="mobile__widget">
+                    <div class="mobile__widget-header widget__open">
+                        <div class="mobile__title">
+                            <img class="mobile__can" src="assets/img/header/can.svg" alt="">
+                            Водосберегающая сантехника</div>
+                    </div>
+                </div>
             </div>
+            <div class="mobile__footer">
+                <ul class="mobile__list">
+                    <div class="mobile__li">
+                        <a class="mobile__link" href="#">Наше производство</a>
+                    </div>
+                    <div class="mobile__li">
+                        <a class="mobile__link" href="#">Готовые решения</a>
+                    </div>
+                    <div class="mobile__li">
+                        <a class="mobile__link" href="#">О компании</a>
+                    </div>
+                    <div class="mobile__li">
+                        <a class="mobile__link" href="#">Доставка и оплата</a>
+                    </div>
+                    <div class="mobile__li">
+                        <a class="mobile__link" href="#">Сертификаты</a>
+                    </div>
+                    <div class="mobile__li">
+                        <a class="mobile__link" href="#">Новости</a>
+                    </div>
+                </ul>
+            </div>
+
         </div>
     </div>
 </header>
@@ -197,6 +202,8 @@
                 </div>
                 <button class="btn">
                     <img class="btn__img" src="assets/img/btn/arrow.svg" alt="">
+                    <img class="btn__img2" src="assets/img/btn/arrow2.svg" alt="">
+
                     Подробнее
                 </button> 
                 <img class="intro__decor" src="assets/img/intro/decor.png" alt="">
@@ -219,29 +226,21 @@
             <div class="category__inner">
                 <div class="category__title">Отопительное оборудование</div>
                 <div class="category__content">
-                    <span class="number media">
-                        <div class="text">2394</div>
-                        <div class="measure">товаров</div>
-                    </span>
                     <div class="filter">
+                        <div class="filter__wrapper">
                         <div class="filter__header">
                             <div class="filter__title">
-                                <img src="assets/img/filter/decor.svg" alt="">
                                 Фильтры</div>
-                            <div class="filter__close filter__media">
+                            <div class="filter__close">
                                Сбросить 
                                 <img src="assets/img/category/close.svg" alt="">
-                            </div>
-                            <div class="filter__sorting">
-                                Сортировка
-                                <img src="assets/img/category/arrow.svg" alt="">
                             </div>
                             
                         </div>
                         <div class="filter__content">
                             <div class="filter__body">
                                 <div class="widget">
-                                    <div class="widget__header widget__open">
+                                    <div class="widget__header widget__open widget__header--active">
                                         <div class="widget__title">Отопительное оборудование</div>
                                         <button class="widget__arrow arrow">
                                             <img src="assets/img/category/arrow.svg" alt="">
@@ -268,7 +267,7 @@
                                 </div>
 
                                 <div class="widget">
-                                    <div class="widget__header widget__open">
+                                    <div class="widget__header widget__open widget__header--active">
                                         <div class="widget__title">Бренд</div>
                                         <button class="widget__arrow arrow">
                                             <img src="assets/img/category/arrow.svg" alt="">
@@ -289,17 +288,17 @@
                                         </li>
                                         <li class="widget__item checkbox">
                                             <input class="checkbox__input" type="checkbox" id="checkbox_8">
-                                            <label class="checkbox__label" for="checkbox_8">Loten</label>
+                                            <label class="checkbox__label checkbox__label-lh" for="checkbox_8">Loten</label>
                                         </li>
                                         <li class="widget__item checkbox">
                                             <input class="checkbox__input" type="checkbox" id="checkbox_9">
-                                            <label class="checkbox__label" for="checkbox_9">Guardo</label>
+                                            <label class="checkbox__label checkbox__label-lh" for="checkbox_9">Guardo</label>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="widget">
-                                    <div class="widget__header widget__open">
+                                    <div class="widget__header widget__header--active ">
                                         <div class="widget__title">Цена</div>
                                     </div>
 
@@ -317,18 +316,9 @@
                                             </div>
                                         </div>
                                     </div>
-    
-
-
-
-
-
-
-
-
-
+                                </div>
                                 <div class="widget">
-                                    <div class="widget__header widget__open">
+                                    <div class="widget__header widget__open widget__header--active">
                                         <div class="widget__title">Количество секций</div>
                                         <button class="widget__arrow arrow">
                                             <img src="assets/img/category/arrow.svg" alt="">
@@ -355,7 +345,7 @@
                                 </div>
 
                                 <div class="widget">
-                                    <div class="widget__header widget__open">
+                                    <div class="widget__header widget__open widget__header--active">
                                         <div class="widget__title">Межосетевое расстояние</div>
                                         <button class="widget__arrow arrow">
                                             <img src="assets/img/category/arrow.svg" alt="">
@@ -378,7 +368,7 @@
                                 </div>
 
                                 <div class="widget">
-                                    <div class="widget__header widget__open">
+                                    <div class="widget__header widget__open widget__header--active">
                                         <div class="widget__title">Площадь отопления</div>
                                         <button class="widget__arrow arrow">
                                             <img src="assets/img/category/arrow.svg" alt="">
@@ -405,7 +395,7 @@
                                 </div>
 
                                 <div class="widget">
-                                    <div class="widget__header widget__open">
+                                    <div class="widget__header widget__open widget__header--active">
                                         <div class="widget__title">Цвет</div>
                                         <button class="widget__arrow arrow">
                                             <img src="assets/img/category/arrow.svg" alt="">
@@ -490,8 +480,8 @@
                         </div>
                         <div class="filter__footer">
                             <button class="filter__btn">
-                                <img src="assets/img/btn/arrow2.svg" alt="">
-                                применить
+                                <img src="assets/img/btn/arrow3.svg" alt="">
+                                Применить
                             </button>
                             <div class="filter__close">
                                 Сбросить 
@@ -499,270 +489,297 @@
                                 </div>
                         </div>
                     
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="number">
+                                <div class="text">2394</div>
+                                <div class="measure">товаров</div>
+                            </span>
+                            <div class="card__sort">
+                                <div class="card__cost">Цена:</div>
+                                <div class="filter__sort">
+                                    <div class="filter__small-title widget__open">
+                                        По возрастанию
+                                        <button class="arrow">
+                                            <img src="assets/img/category/arrow.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="filter__block widget__hide">
+                                        <div class="filter__block-item">По возрастанию</div>
+                                        <div class="filter__block-item">По убыванию</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-mobile">
+                            <div class="filter-mobile__filter">
+                                <img class="filter-mobile__decor" src ="assets/img/filter/decor.svg">
+                                Фильтры
+                            </div>
+                            <div class="filter__sort">
+                                <div class="filter-mobile__title widget__open">
+                                    Сортировка
+                                    <button class="arrow">
+                                        <img src="assets/img/category/arrow.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="filter-mobile__content widget__hide">
+                                    <div class="filter-mobile__item">По возрастанию</div>
+                                    <div class="filter-mobile__item">По убыванию</div>
+                                </div>
+                            </div>
+                                
+                        </div>
+                        <div class="card__items">
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/1.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/2.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                        <div class="card__old-price">5 890</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="card__events">
+                                    <div class="card__event">
+                                        <img src="assets/img/category/percent.svg" alt="">
+                                        Акция
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/3.jpg" alt="">
+                                </div>
+                                <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/1.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/2.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/3.jpg" alt="">
+                                </div>
+                                <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/1.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/2.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                        <div class="card__old-price">5 890</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="card__events">
+                                    <div class="card__event">
+                                        <img src="assets/img/category/percent.svg" alt="">
+                                        Акция
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/3.jpg" alt="">
+                                </div>
+                                <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/1.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/2.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/3.jpg" alt="">
+                                </div>
+                                <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/1.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/2.jpg" alt="">
+                                </div>
+                                <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+                            <div class="card__item">
+                                <div class="card__img">
+                                    <img src="assets/img/category/3.jpg" alt="">
+                                </div>
+                                <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
+                                <div class="card__footer">
+                                    <div class="card__price">
+                                        <div class="card__new-price">4 250</div>
+                                    </div>
+                                    <button class="card__btn">
+                                        <img src="assets/img/category/basket.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                        <div class="card__basement">
+                            <button class="card__more">Показать еще</button>
+                        </div>
                         
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__header">
-                        <span class="number">
-                            <div class="text">2394</div>
-                            <div class="measure">товаров</div>
-                        </span>
-                        <div class="card__sort">
-                            <div class="card__cost">Цена:</div>
-                            <div class="card__assortment">По возрастанию
-                            </div>
-                            <button class="arrow">
-                                <img src="assets/img/category/arrow.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card__items">
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/1.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/2.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                    <div class="card__old-price">5 890</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                            <div class="card__events">
-                                <div class="card__event">
-                                    <img src="assets/img/category/percent.svg" alt="">
-                                    Акция
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/3.jpg" alt="">
-                            </div>
-                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/1.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/2.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/3.jpg" alt="">
-                            </div>
-                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/1.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/2.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                    <div class="card__old-price">5 890</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                            <div class="card__events">
-                                <div class="card__event">
-                                    <img src="assets/img/category/percent.svg" alt="">
-                                    Акция
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/3.jpg" alt="">
-                            </div>
-                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/1.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/2.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/3.jpg" alt="">
-                            </div>
-                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/1.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/2.jpg" alt="">
-                            </div>
-                            <div class="card__title">Биметаллический радиатор Royal Thermo Indigo Super </div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card__item">
-                            <div class="card__img">
-                                <img src="assets/img/category/3.jpg" alt="">
-                            </div>
-                            <div class="card__title">Радиатор биметаллический Royal Thermo PianoForte Bianco Traffico</div>
-                            <div class="card__footer">
-                                <div class="card__price">
-                                    <div class="card__new-price">4 250</div>
-                                </div>
-                                <button class="card__btn">
-                                    <img src="assets/img/category/basket.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="card__basement">
-                        <button class="card__more">Показать еще</button>
-                    </div>
+                    </div> 
                     
                 </div>
             </div>
@@ -794,12 +811,12 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="container">
+    <div class="container__footer">
         <div class="footer__inner">
             <div class="footer__columns">
                 <div class="footer__column">
                     <a class="footer__logo" href="">
-                        <img class="footer__logo" src="assets/img/other/logo.svg" alt="">
+                        <img class="footer__logo" src="assets/img/footer/logo.svg" alt="">
                     </a>
                     <div class="footer__connection connection">
                         <a class="connection__number" href="tel:+74955063650"> 

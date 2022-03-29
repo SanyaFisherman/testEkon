@@ -412,14 +412,26 @@ footer {
     flex: 0 0 auto;
 }
 
-.container-header {
-    max-width: 1562px;
+.container__header-top {
+    max-width: 1566px;
+    margin: 0 auto;
+    padding: 0 21px;
+}
+
+.container__header-bottom {
+    max-width: 1563px;
     margin: 0 auto;
     padding: 0 21px;
 }
 
 .container {
-    max-width: 1560px;
+    max-width: 1561px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container__footer {
+    max-width: 1565px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -499,8 +511,7 @@ input[type=number] {
 
 @media (max-width: 415px) {
     .header__item-person {
-        width: 22px;
-        height: 24px;
+        display: none;
     }
 }
 
@@ -508,14 +519,23 @@ input[type=number] {
     display: block;
     width: 26px;
     height: 26px;
-    margin-right: -5px;
 }
 
 @media (max-width: 415px) {
     .header__item-basket {
+        display: none;
+    }
+}
+
+.header__mobile-basket {
+    display: none;
+}
+
+@media (max-width: 415px) {
+    .header__mobile-basket {
+        display: block;
         width: 19px;
         height: 22px;
-        margin: 0;
     }
 }
 
@@ -525,9 +545,22 @@ input[type=number] {
     height: 23px;
 }
 
+.header__mobile-person {
+    display: none;
+}
+
+@media (max-width: 415px) {
+    .header__mobile-person {
+        display: block;
+        width: 20px;
+        height: 22px;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
 .header-top {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     height: 101px;
@@ -541,17 +574,7 @@ input[type=number] {
 
 .header-top__items {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 142px;
-    width: 100%;
-}
-
-@media (max-width: 415px) {
-    .header-top__items {
-        max-width: 106px;
-        margin: 0;
-    }
 }
 
 .header-top__item {
@@ -570,7 +593,7 @@ input[type=number] {
     align-items: center;
     position: absolute;
     top: -8px;
-    right: -14px;
+    right: -10px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -579,10 +602,13 @@ input[type=number] {
 
 .header-top__phone {
     display: none;
+    margin-right: 21px;
 }
 
 .header-top__phone img {
     display: block;
+    width: 22px;
+    height: 23px;
 }
 
 @media (max-width: 415px) {
@@ -593,11 +619,23 @@ input[type=number] {
 
 .header-top__car {
     display: block;
+    margin-right: 32px;
 }
 
 @media (max-width: 415px) {
     .header-top__car {
         display: none;
+    }
+}
+
+.header-top__person {
+    display: block;
+    margin-right: 30px;
+}
+
+@media (max-width: 415px) {
+    .header-top__person {
+        margin-right: 21px;
     }
 }
 
@@ -615,6 +653,7 @@ input[type=number] {
 }
 
 .header-bottom__link {
+    position: relative;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -642,7 +681,7 @@ input[type=number] {
 .header-bottom__mail {
     display: block;
     width: 27px;
-    height: 21px;
+    height: 25px;
     margin-right: 12px;
 }
 
@@ -662,12 +701,14 @@ input[type=number] {
 
 .logo {
     display: block;
-    margin-left: 4px;
+    margin-left: 76px;
+    margin-right: 72px;
 }
 
 @media (max-width: 415px) {
     .logo {
-        margin: 0;
+        margin-left: 23px;
+        margin-right: 33px;
     }
 }
 
@@ -692,7 +733,6 @@ input[type=number] {
         display: block;
         width: 186px;
         height: 37px;
-        margin-right: 8px;
     }
 }
 
@@ -735,6 +775,7 @@ input[type=number] {
 .search {
     max-width: 851px;
     width: 100%;
+    margin-right: 67px;
 }
 
 @media (max-width: 415px) {
@@ -747,10 +788,10 @@ input[type=number] {
 .search__input {
     width: 100%;
     margin: 0;
-    padding: 20px 0 19px;
+    padding: 18px 0 17px 66px;
     border: none;
-    background: #F6F6F6 url(../img/header/loupe.svg) no-repeat 29px;
-    padding-left: 68px;
+    background: #F6F6F6 url(../img/header/loupe.svg) no-repeat;
+    background-position: bottom 50% left 29px;
     outline: none;
 }
 
@@ -759,7 +800,7 @@ input[type=number] {
     font-size: 15px;
     font-weight: 400;
     color: #7B7373;
-    line-height: normal;
+    line-height: 19px;
 }
 
 .search__input:-ms-input-placeholder {
@@ -767,7 +808,7 @@ input[type=number] {
     font-size: 15px;
     font-weight: 400;
     color: #7B7373;
-    line-height: normal;
+    line-height: 19px;
 }
 
 .search__input::placeholder {
@@ -775,16 +816,17 @@ input[type=number] {
     font-size: 15px;
     font-weight: 400;
     color: #7B7373;
-    line-height: normal;
+    line-height: 19px;
 }
 
 @media (max-width: 415px) {
     .search__input {
+        padding: 19px 0 20px 66px;
         position: absolute;
-        left: 1px;
+        left: 0px;
         top: 71px;
         padding-left: 56px;
-        background: #F6F6F6 url(../img/header/loupe.svg) no-repeat 19px;
+        background: #F6F6F6 url(../img/header/loupe.svg) no-repeat left 21px bottom 18px;
     }
 }
 
@@ -794,44 +836,39 @@ input[type=number] {
     left: 0;
     transform: translateX(-100%);
     z-index: 10;
-    width: 415px;
+    width: 414px;
     background-color: #fff;
     transition: transform .2s linear;
-    padding: 13px 21px 0 18px;
 }
 
 .mobile__header {
-    position: relative;
     display: flex;
-    margin-bottom: 40px;
+    justify-content: space-between;
+    padding: 17px 23px 18px 18px;
 }
 
 .mobile__logo {
     display: block;
     width: 186px;
     height: 37px;
-    margin-top: 4px;
 }
 
 .mobile__close {
     display: block;
-    position: absolute;
-    top: 4px;
-    right: 3px;
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
 
 .mobile__body {
-    margin-bottom: 41px;
+    padding: 21px 20px;
+    margin-bottom: 21px;
 }
 
 .mobile__arrow {
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    top: 32px;
+    right: 0px;
 }
 
 .mobile__widget {
@@ -843,20 +880,21 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 23px 0;
+    padding: 23px 0 22px;
     cursor: pointer;
 }
 
 .mobile__items {
-    margin-top: 6px !important;
+    margin-top: 6px;
+    margin-left: -2px;
 }
 
 .mobile__item {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .mobile__item:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 .mobile__link {
@@ -868,46 +906,58 @@ input[type=number] {
 }
 
 .mobile__title {
-    display: flex;
-    align-items: center;
     position: relative;
     font-family: 'Euclid';
-    font-weight: 500;
+    font-weight: inherit;
     font-size: 16px;
-    line-height: normal;
+    line-height: 20px;
+    padding-left: 40px;
     color: #2B2E34;
 }
 
 .mobile__radiator {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     display: block;
     width: 21px;
     height: 17px;
-    margin-right: 20px;
 }
 
 .mobile__tap {
     display: block;
-    width: 23px;
-    height: 20px;
-    margin-right: 19px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .mobile__spray {
     display: block;
-    width: 21px;
+    width: 19px;
     height: 21px;
-    margin-right: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .mobile__can {
     display: block;
-    width: 22px;
+    width: 20px;
     height: 20px;
-    margin-right: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .mobile__footer {
     display: flex;
+    padding: 0 19px;
 }
 
 .mobile__list {
@@ -940,8 +990,22 @@ input[type=number] {
     transform: translateX(0);
 }
 
+.temp {
+    font-weight: 500 !important;
+}
+
 .footer {
     margin-bottom: 33px;
+}
+
+.footer__inner {
+    margin-bottom: 57px;
+}
+
+@media (max-width: 415px) {
+    .footer__inner {
+        margin-bottom: 13px;
+    }
 }
 
 .footer__columns {
@@ -953,10 +1017,24 @@ input[type=number] {
 .footer__column {
     display: flex;
     flex-direction: column;
+    margin-top: 57px;
+}
+
+@media (max-width: 415px) {
+    .footer__column {
+        margin-top: 0;
+    }
 }
 
 .footer__column:nth-child(1) {
     width: 280px;
+    margin-top: 49px;
+}
+
+@media (max-width: 415px) {
+    .footer__column:nth-child(1) {
+        margin-bottom: 60px;
+    }
 }
 
 .footer__column:nth-child(2) {
@@ -968,7 +1046,7 @@ input[type=number] {
 }
 
 .footer__column:nth-child(4) {
-    width: 148px;
+    width: 149px;
 }
 
 @media (max-width: 415px) {
@@ -985,7 +1063,6 @@ input[type=number] {
     color: #2B2E34;
     font-weight: 500;
     margin-bottom: 26px;
-    margin-top: 5px;
 }
 
 @media (max-width: 415px) {
@@ -1015,14 +1092,15 @@ input[type=number] {
 
 .footer__logo {
     display: block;
-    width: 275px;
-    height: 65px;
-    margin-bottom: 57px;
+    width: 283px;
+    height: 66px;
+    margin-bottom: 58px;
 }
 
 @media (max-width: 415px) {
     .footer__logo {
-        margin: 0 0 39px 0;
+        margin: 0 0 39px -2px;
+        width: 280px;
     }
 }
 
@@ -1048,15 +1126,14 @@ input[type=number] {
     font-size: 18px;
     line-height: 20px;
     text-decoration: none;
-    padding-left: 33px;
+    padding-left: 36px;
     margin-bottom: 19px;
 }
 
 .connection__number img {
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 0;
     display: block;
     width: 20px;
     height: 21px;
@@ -1084,16 +1161,16 @@ input[type=number] {
 .connection__mail img {
     position: absolute;
     left: 0;
-    top: -6px;
+    bottom: 0;
     display: block;
     width: 24px;
-    height: 24px;
+    height: 23px;
 }
 
 .connection__dates {
     display: flex;
     flex-direction: column;
-    margin-bottom: 54px;
+    margin-bottom: 55px;
 }
 
 @media (max-width: 415px) {
@@ -1136,12 +1213,11 @@ input[type=number] {
     display: flex;
     align-items: center;
     font-family: 'Gilroy';
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 25px;
     color: #7E838C;
     max-width: 110px;
-    margin-bottom: 24px;
     text-decoration: none;
 }
 
@@ -1164,13 +1240,11 @@ input[type=number] {
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid rgba(217, 218, 225, 0.8);
-    padding-top: 42px;
-    margin-top: 32px;
+    padding-top: 43px;
 }
 
 @media (max-width: 415px) {
     .copyright {
-        margin-top: 13px;
         flex-direction: column;
         align-items: baseline;
         padding-top: 60px;
@@ -1257,7 +1331,7 @@ input[type=number] {
 .intro__title {
     font-family: 'Euclid';
     font-size: 42px;
-    line-height: normal;
+    line-height: 53px;
     color: #fff;
     font-weight: 600;
     margin-bottom: 23px;
@@ -1269,6 +1343,7 @@ input[type=number] {
     .intro__title {
         text-align: center;
         font-size: 28px;
+        line-height: 36px;
         margin-top: 41px;
         margin-bottom: 12px;
     }
@@ -1282,6 +1357,8 @@ input[type=number] {
     font-weight: 400;
     max-width: 579px;
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 415px) {
@@ -1373,7 +1450,7 @@ input[type=number] {
     color: #2B2E34;
     line-height: 53px;
     margin-bottom: 58px;
-    margin-top: 18px;
+    margin-top: 19px;
 }
 
 @media (max-width: 415px) {
@@ -1398,7 +1475,7 @@ input[type=number] {
 }
 
 .seo {
-    margin-bottom: 245px;
+    margin-bottom: 190px;
 }
 
 @media (max-width: 415px) {
@@ -1451,10 +1528,15 @@ input[type=number] {
 
 @media (max-width: 415px) {
     .filter {
-        max-width: 372px;
+        position: fixed;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        overflow-y: auto;
         width: 100%;
-        margin-right: 0;
-        margin-bottom: 39px;
+        display: none;
     }
 }
 
@@ -1463,8 +1545,8 @@ input[type=number] {
 }
 
 @media (max-width: 415px) {
-    .filter__content {
-        display: none;
+    .filter__body {
+        padding: 0 20px;
     }
 }
 
@@ -1473,13 +1555,14 @@ input[type=number] {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 32px 60px 30px;
+    padding: 30px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 415px) {
     .filter__header {
         margin-bottom: 0;
-        padding: 33px 30px 33px 50px;
+        padding: 61px 0 47px 23px;
     }
 }
 
@@ -1489,7 +1572,13 @@ input[type=number] {
     font-size: 22px;
     line-height: normal;
     color: #1D2F53;
-    cursor: pointer;
+}
+
+@media (max-width: 415px) {
+    .filter__title {
+        font-size: 25px;
+        line-height: 32px;
+    }
 }
 
 .filter__title img {
@@ -1508,6 +1597,29 @@ input[type=number] {
     }
 }
 
+.filter__small-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Euclid';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    padding-right: 34px;
+}
+
+.filter__small-title .arrow {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    transform-origin: center;
+}
+
+.filter__sort {
+    position: relative;
+}
+
 .filter__close {
     position: relative;
     font-family: 'Euclid';
@@ -1515,15 +1627,20 @@ input[type=number] {
     font-size: 16px;
     line-height: normal;
     color: #8C7E81;
-    padding-right: 28px;
+    padding-right: 30px;
     cursor: pointer;
+}
+
+@media (max-width: 415px) {
+    .filter__close {
+        display: none;
+    }
 }
 
 .filter__close img {
     display: block;
-    width: 14px;
-    height: 14px;
-    margin-top: 3px;
+    width: 16px;
+    height: 16px;
     position: absolute;
     top: 50%;
     right: 0;
@@ -1539,7 +1656,7 @@ input[type=number] {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 28px 44px 33px 22px;
+        padding: 28px 43px 33px 22px;
         background-color: #fff;
         width: 100%;
         margin: 0 auto;
@@ -1553,7 +1670,7 @@ input[type=number] {
     border-radius: none;
     background-color: #38D3E8;
     border-radius: 2px;
-    padding: 17px 24px 17px 8px;
+    padding: 17px 44px 17px 27px;
     color: #fff;
     font-family: 'Euclid';
     font-weight: 400;
@@ -1572,57 +1689,53 @@ input[type=number] {
     margin-right: 15px;
 }
 
-@media (max-width: 415px) {
-    .filter__media {
-        display: none;
-    }
-}
-
-.filter__sorting {
+.filter__block {
     display: none;
+    position: absolute;
+    top: 25px;
+    white-space: nowrap;
 }
 
-.filter__sorting img {
-    align-items: center;
-    width: 13px;
-    height: 8px;
-    margin-left: 13px;
-    margin-top: 2px;
+.filter.filter--active {
+    display: block;
 }
 
-@media (max-width: 415px) {
-    .filter__sorting {
-        display: flex;
-        align-items: center;
-        font-family: 'Euclid';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: normal;
-        letter-spacing: 0.02em;
-        cursor: pointer;
-    }
+.widget {
+    padding-bottom: 60px;
+}
+
+.widget:last-child {
+    padding-bottom: 42px;
 }
 
 .widget__header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 27px 0;
+    margin-bottom: 25px;
+    font-weight: 400;
     cursor: pointer;
+}
+
+@media (max-width: 415px) {
+    .widget__header {
+        margin-bottom: 33px;
+    }
 }
 
 .widget__title {
     position: relative;
-    font-weight: 500;
     font-size: 18px;
-    line-height: normal;
-    color: #1D2F53;
+    line-height: 23px;
+    color: #2B2E34;
+    font-weight: inherit;
 }
 
 @media (max-width: 415px) {
     .widget__title {
         font-size: 20px;
-        line-height: normal;
+        line-height: 29px;
     }
 }
 
@@ -1633,24 +1746,57 @@ input[type=number] {
 }
 
 .widget__item:last-child {
-    margin-bottom: 62px;
+    margin: 0;
+}
+
+@media (max-width: 415px) {
+    .widget__item {
+        margin-bottom: 25px;
+    }
 }
 
 .widget__price {
-    margin-top: 13px;
-    margin-bottom: 59px;
+    margin-top: 39px;
+}
+
+@media (max-width: 415px) {
+    .widget__price {
+        margin-top: 46px;
+    }
+}
+
+.widget__price-labels {
+    margin-top: 21px;
+}
+
+@media (max-width: 415px) {
+    .widget__price-labels {
+        margin-top: 29px;
+    }
 }
 
 .widget__price-input {
     background-color: transparent;
     border: none;
     outline: none;
-    margin-top: 25px;
     font-family: 'Euclid';
     font-weight: 500;
     font-size: 14px;
-    line-height: normal;
-    color: #1D2F53;
+    line-height: 18px;
+    color: #2B2E34;
+}
+
+@media (max-width: 415px) {
+    .widget__price-input {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.widget__arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 .checkbox {
@@ -1669,8 +1815,8 @@ input[type=number] {
     font-family: 'Euclid';
     font-weight: 400;
     font-size: 15px;
-    line-height: normal;
-    color: #1D2F53;
+    line-height: 19px;
+    color: #2B2E34;
     padding-left: 36px;
     cursor: pointer;
 }
@@ -1678,6 +1824,8 @@ input[type=number] {
 @media (max-width: 415px) {
     .checkbox__label {
         font-size: 18px;
+        padding-left: 48px;
+        line-height: 23px;
     }
 }
 
@@ -1693,6 +1841,13 @@ input[type=number] {
     z-index: 1;
 }
 
+@media (max-width: 415px) {
+    .checkbox__label::before {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 .checkbox__label::after {
     content: '';
     display: block;
@@ -1705,6 +1860,30 @@ input[type=number] {
     left: 3px;
     z-index: 2;
     opacity: 0;
+}
+
+@media (max-width: 415px) {
+    .checkbox__label::after {
+        width: 14px;
+        height: 12px;
+        top: 5px;
+        left: 6px;
+        background: url(../img/category/check2.svg) no-repeat;
+    }
+}
+
+.checkbox__label-lh {
+    line-height: 22px;
+}
+
+@media (max-width: 415px) {
+    .checkbox__label-lh {
+        line-height: 23px !important;
+    }
+}
+
+.widget__item:last-child .checkbox__label {
+    line-height: 22px;
 }
 
 .checkbox__close {
@@ -1743,12 +1922,20 @@ input[type=number] {
     opacity: 0;
 }
 
+.widget__header--active {
+    font-weight: 500;
+}
+
 .checkbox__input:checked + .checkbox__label:after {
     opacity: 1;
 }
 
 .checkbox__input:checked + .checkbox__label {
     font-weight: 500;
+}
+
+.checkbox__input:checked + .checkbox__label-color:after {
+    opacity: 1;
 }
 
 .red:before {
@@ -1929,10 +2116,74 @@ input[type=number] {
     width: 100%;
 }
 
+.filter-mobile {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    width: 372px;
+    height: 86px;
+    background-color: #F4F4F4;
+    margin-bottom: 39px;
+}
+
+@media (max-width: 415px) {
+    .filter-mobile {
+        display: flex;
+    }
+}
+
+.filter-mobile__filter {
+    display: flex;
+    align-items: center;
+    font-family: 'Euclid';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.filter-mobile__decor {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+}
+
+.filter-mobile__content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    white-space: nowrap;
+}
+
+.filter-mobile__title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Euclid';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    padding-right: 26px;
+}
+
+.filter-mobile__title .arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     margin-bottom: 155px;
+}
+
+@media (max-width: 415px) {
+    .card {
+        margin-bottom: 119px;
+    }
 }
 
 .card__items {
@@ -1943,19 +2194,26 @@ input[type=number] {
     width: 100%;
 }
 
+@media (max-width: 415px) {
+    .card__items {
+        margin-left: 3px;
+    }
+}
+
 .card__item {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 31.272%;
     background-color: #fff;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
 }
 
 @media (max-width: 415px) {
     .card__item {
         width: 48%;
         margin-bottom: 15px;
+        max-height: 281px;
     }
 }
 
@@ -1963,15 +2221,15 @@ input[type=number] {
     position: relative;
     width: 296px;
     height: 305px;
-    margin: 0 auto 34px;
+    margin: 0 auto 32px;
     background-color: #fff;
 }
 
 @media (max-width: 415px) {
     .card__img {
-        height: 162px;
+        height: 156px;
         width: 152px;
-        margin: 0 auto;
+        margin: 0 auto 10px;
     }
 }
 
@@ -1996,6 +2254,10 @@ input[type=number] {
     max-width: 298px;
     width: 100%;
     margin: 0 auto 18px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 @media (max-width: 415px) {
@@ -2021,34 +2283,40 @@ input[type=number] {
 
 .card__event {
     width: 110px;
-    height: 36px;
     background-color: #F31B4F;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'Euclid';
-    font-weight: 500;
+    font-weight: 400;
     font-size: 15px;
-    line-height: normal;
+    line-height: 19px;
     color: #fff;
-    padding: 0 21px 0 17px;
+    padding: 8px 21px 9px 17px;
 }
 
 @media (max-width: 415px) {
     .card__event {
         width: 80px;
         height: 29px;
-        padding: 0 13px 0 8px;
+        padding: 7px 13px 7px 8px;
         font-size: 12px;
-        line-height: 15px;
+        line-height: 16px;
         font-weight: 400;
     }
 }
 
 .card__event img {
     display: block;
-    width: 11px;
-    height: 12px;
+    width: 14px;
+    height: 15px;
+}
+
+@media (max-width: 415px) {
+    .card__event img {
+        width: 11px;
+        height: 12px;
+    }
 }
 
 .card__header {
@@ -2065,7 +2333,10 @@ input[type=number] {
 
 @media (max-width: 415px) {
     .card__header {
-        display: none;
+        background-color: #fff;
+        padding: 0;
+        margin: 0 0 31px;
+        height: auto;
     }
 }
 
@@ -2087,6 +2358,12 @@ input[type=number] {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+@media (max-width: 415px) {
+    .card__sort {
+        display: none;
+    }
 }
 
 .card__btn {
@@ -2207,7 +2484,7 @@ input[type=number] {
     .card__basement {
         display: flex;
         justify-content: center;
-        margin-top: 45px;
+        margin-top: 30px;
     }
 }
 
@@ -2219,7 +2496,7 @@ input[type=number] {
     font-family: 'Euclid';
     font-weight: 500;
     font-size: 15px;
-    line-height: 28px;
+    line-height: 25px;
     color: #2B2E34;
     border-bottom: 1px solid #2B2E34;
 }
@@ -2261,33 +2538,46 @@ input[type=number] {
     background-color: #fff;
     color: #2B2E34;
     cursor: pointer;
+    margin-top: 5px;
     font-family: 'Euclid';
     font-weight: 500;
     font-size: 18px;
     line-height: normal;
     padding: 27px 51px 28px 50px;
-    margin-top: 5px;
     letter-spacing: 0.02em;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 415px) {
     .btn {
-        padding: 18px 40px 18px 35px;
+        padding: 17px 40px 16px 36px;
         font-size: 15px;
+        line-height: 19px;
+        margin-top: 7px;
     }
 }
 
 .btn__img {
     display: block;
-    width: 41px;
-    height: 11px;
-    margin-right: 36px;
+    width: 43px;
+    height: 13px;
+    margin-right: 35px;
 }
 
 @media (max-width: 450px) {
     .btn__img {
-        width: 35px;
-        height: 13px;
+        display: none;
+    }
+}
+
+.btn__img2 {
+    display: none;
+}
+
+@media (max-width: 415px) {
+    .btn__img2 {
+        width: 34px;
+        height: 11px;
+        display: block;
         margin-right: 35px;
     }
 }

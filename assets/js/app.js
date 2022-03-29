@@ -49,11 +49,7 @@ $(document).ready(function () {
     $('.widget__open').click(function () {
         $(this).next('.widget__hide').slideToggle(300);
         $(this).children('.arrow').toggleClass('active');
-    });
-
-    $('.filter__header').click(function () {
-        $(this).next('.filter__content').slideToggle(300);
-
+        $(this).toggleClass('widget__header--active')
     });
 
     // Burger
@@ -100,9 +96,14 @@ $(document).ready(function () {
         $(this).children('.checkbox__close').removeClass('active');
     })
 
+    $('.filter-mobile__filter').on('click', function () {
+        $('.filter').addClass('filter--active');
+    })
+
+    $('.filter__title').on('click', function () {
+        $('.filter').removeClass('filter--active');
+    })
+
+
+
 })
-
-
-
-
-// wdqwdqwqwd
